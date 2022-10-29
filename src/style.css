@@ -61,6 +61,7 @@ body {
 }
 
 #nav-bar li {
+    cursor: pointer;
     flex-grow: 1;
     padding: 1rem;
 }
