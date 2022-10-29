@@ -66,12 +66,26 @@ body {
 }
 
 #nav-bar li.active {
+    animation-name: glow;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
     background: rgba(128, 128, 128, 0.438);
     border: 1px solid #66FF66;
-    box-shadow: 1px 1px 1px #66FF66, -1px -1px 1px #66FF66;
     box-sizing: border-box;
     color: white;
     font-weight: bold;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #66FF66, 0 0 5px #66FF66;
+    }
+
+    100% {
+        box-shadow: 0 0 20px #66FF66, 0 0 20px #66FF66;
+    }
 }
 
 #content-div {
