@@ -1,3 +1,7 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 h1 {
     margin: 1rem;
     font-size: 5rem;
@@ -28,12 +32,40 @@ body {
 }
 
 #content {
+    border-radius: 1rem;
     height: 100%;
     margin: 1rem;
     width: max(75%, 50vw);
-    background: black;
-    opacity: 0.25;
+    background: rgba(0, 0, 0, .25);
+    overflow: hidden;
     z-index: 3;
+}
+
+#nav-bar {
+    width: 100%;
+}
+
+#nav-bar > ul{
+    display: flex;
+    width: 100%;
+}
+
+#nav-bar > ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+#nav-bar li {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+#nav-bar li.active {
+    background: rgba(128, 128, 128, 0.438);
+    color: white;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 750px) {
