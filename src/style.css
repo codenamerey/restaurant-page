@@ -12,25 +12,28 @@ body {
 }
 
 #image-container {
+    background: url(./eiffel.jpg);
+    background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     width: 100%;
-}
-
-#image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
 }
 
 #title {
     color: white;
-    position: absolute;
     text-shadow: 1px 1px 1px #000;
     z-index: 2;
+}
+
+#content {
+    height: 100%;
+    margin: 1rem;
+    width: max(75%, 50vw);
+    background: black;
+    opacity: 0.25;
+    z-index: 3;
 }
 
 @media only screen and (max-width: 750px) {
